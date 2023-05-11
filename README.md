@@ -1,2 +1,5 @@
-# E-learning-Webite
-E-learning Website developed for Alive Digital and E-learnings
+# Learning Management System 
+
+Learning Management System for E-Learning Platform  
+
+
