@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width={device-width}, initial-scale=1.0">
+{% extends 'user/base.html' %}
+{% block header %}
+Profile{% endblock header %}
 
-    <title>Document</title>
-</head>
-<body>
+{% block body %}
     {% if user.is_authenticated %}
-    {{ user }}
+  <h1> {{ user }}</h1> 	
+
+
 
 {% endif %}     
-</body>
-</html>
+<a class="nav-link active " aria-current="page" href="{% url 'logout' %}" >Logout</a>
+{% endblock body %}
+
