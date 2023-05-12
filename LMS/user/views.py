@@ -2,7 +2,7 @@ from django.shortcuts import render ,HttpResponse,redirect
 from django.contrib.auth import authenticate , login,logout
 
 def hello(request):
-    return HttpResponse("This is home Page")
+    return render (request,'user/base.html')
 
 # Create your views here.
 def login(request):
